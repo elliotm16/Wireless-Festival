@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WirelessFestival.exe" version="1.0.0.0" publicKeyToken="35746fd3e52bb65c" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WirelessFestival" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WirelessFestival.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WirelessFestival.exe" size="77824">
+      <assemblyIdentity name="WirelessFestival" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>emefFtlqUYA7CyB+zPHSAgIRiB4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=ELLIOT\Elliot" issuerKeyHash="a7a7991790b2e8427a6a55c01d7764740e8ab446" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZUsYhBDCdjW7xMJcLpxeWhY7mAY=</DigestValue></Reference></SignedInfo><SignatureValue>4P5JJHpQUZ7sqWVW/U7A1jDxI28025uSQN1ERK0AN+0GVQYE/AVOpzlcYSEGiFF32MFCCDktn/Yj4U5LmzFwI6nx2JDzUO/cRfckTReITNiuqXfUIN27/WqQsct6eQCTcfLMW1tbJXF0aOZxgYaqW697z8lNv1b41BR9OJFO+9Y=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7MWy+FdjtBKCSgeqHPkqFUg4/MqPu3oTjNfPFWM4TpDWPCDNr3FY4VMPQwS1yL0Talr/PL6gE9Yty0qD6mPdujeYmIYpukmRCY1kIP6uZ0EXXnqSTt1qiJPL8FZq/wG0HD6zAJ5WJmHt/Gw9R5gq86PFqnAe4pBnVIdMKeqnQFM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="06983b165a5e9c2e5cc2c4bb3576c21084184b65" Description="" Url=""><as:assemblyIdentity name="WirelessFestival.exe" version="1.0.0.0" publicKeyToken="35746fd3e52bb65c" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ELLIOT\Elliot</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>E/tPJv7lPEici15dgqohV5KX+BY=</DigestValue></Reference></SignedInfo><SignatureValue>krOZdT55IgFYYmehLf8+MqU6aiQSlCdMzISnA5UpoW8wfPb9ZTbxWkNsdUrG2JuFfznk/B+iipd9PLEGQSNeeYrByvnrMMpKtialjzv5/qxU9O8G1wNkqIdKe1b7ocFnw2mrD4df9TKQj472UNPK8cNe1ju7sO0ImEovSFDX49U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7MWy+FdjtBKCSgeqHPkqFUg4/MqPu3oTjNfPFWM4TpDWPCDNr3FY4VMPQwS1yL0Talr/PL6gE9Yty0qD6mPdujeYmIYpukmRCY1kIP6uZ0EXXnqSTt1qiJPL8FZq/wG0HD6zAJ5WJmHt/Gw9R5gq86PFqnAe4pBnVIdMKeqnQFM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQXLChLSQsiYxCZ43sgVJScTANBgkqhkiG9w0BAQUFADAlMSMwIQYDVQQDHhoARQBMAEwASQBPAFQAXABFAGwAbABpAG8AdDAeFw0xNzA4MTMxODIzMDdaFw0xODA4MTQwMDIzMDdaMCUxIzAhBgNVBAMeGgBFAEwATABJAE8AVABcAEUAbABsAGkAbwB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsxbL4V2O0EoJKB6oc+SoVSDj8yo+7ehOM188VYzhOkNY8IM2vcVjhUw9DBLXIvRNqWv88vqAT1i3LSoPqY926N5iYhim6SZEJjWQg/q5nQRdeepJO3WqIk8vwVmr/AbQcPrMAnlYmYe38bD1HmCrzo8WqcB7ikGdUh0wp6qdAUwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAFZgF9mpd7fDNNZds0zLIWfSticJvVXAzvDGQg/yTcZ8Rfz8ROO1lgdNq6+RiOCKQCeocwoWrffnSQDSa7KaHjI6VB7yOOku+DBg1wOEkEQ43MDpJSuel3fVkxqixdHVfc0+z7yFwrr8flj+nwC7+gH8XQuHVwqFFibOLfele3Ql</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
