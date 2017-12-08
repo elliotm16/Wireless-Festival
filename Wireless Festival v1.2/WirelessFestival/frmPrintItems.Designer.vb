@@ -41,7 +41,7 @@ Partial Class frmPrintItems
         Me.ClientSize = New System.Drawing.Size(384, 361)
         Me.Controls.Add(Me.lstItems)
         Me.Name = "frmPrintItems"
-        Me.Text = "PrintItems"
+        Me.Text = "Print Items"
         Me.ResumeLayout(False)
 
     End Sub

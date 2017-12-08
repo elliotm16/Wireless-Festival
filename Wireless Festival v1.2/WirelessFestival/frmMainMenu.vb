@@ -2,8 +2,12 @@
 
     Private Sub btnSignOut_Click(sender As System.Object, e As System.EventArgs) Handles btnSignOut.Click
 
-        frmWelcome.Show()
-        Me.Hide()
+        If MessageBox.Show("Are you sure you want to Sign Out?", "Sign Out", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+
+            frmSignIn.Show()
+            Me.Hide()
+
+        End If
 
     End Sub
 

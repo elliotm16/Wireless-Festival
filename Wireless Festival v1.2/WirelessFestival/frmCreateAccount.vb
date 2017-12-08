@@ -23,7 +23,7 @@ Public Class frmCreateAccount
             txtPassword1.Text = ""
             txtPassword2.Text = ""
 
-            frmWelcome.Show()
+            frmSignIn.Show()
             Me.Hide()
 
         End If
@@ -31,6 +31,9 @@ Public Class frmCreateAccount
     End Sub
 
     Public Function Validation(CustomersData)
+
+        Dim PasswordReq As Boolean
+        PasswordReq = True
 
         txtNumCharacters.ForeColor = Color.Black
         txtLettersNumbers.ForeColor = Color.Black
@@ -76,6 +79,8 @@ Public Class frmCreateAccount
 
             txtNumCharacters.ForeColor = Color.DarkRed
 
+            PasswordRequirements()
+
             Return False
 
         End If
@@ -99,6 +104,8 @@ Public Class frmCreateAccount
 
             txtLettersNumbers.ForeColor = Color.DarkRed
 
+            PasswordRequirements()
+
             Return False
 
         End If
@@ -108,6 +115,8 @@ Public Class frmCreateAccount
         If (txtPassword1.Text = (txtPassword1.Text).ToUpper) Or (txtPassword1.Text = (txtPassword1.Text).ToLower) Then
 
             txtBothCases.ForeColor = Color.DarkRed
+
+            PasswordRequirements()
 
             Return False
 
@@ -127,10 +136,10 @@ Public Class frmCreateAccount
 
     End Function
 
-    Private Sub btnSignIn_Click_1(sender As System.Object, e As System.EventArgs) Handles btnSignIn.Click
+    Public Sub PasswordRequirements()
 
-        Me.Hide()
-        frmSignIn.Show()
+        txtPassword1.ForeColor = Color.DarkRed
+        txtPassword2.ForeColor = Color.DarkRed
 
     End Sub
 

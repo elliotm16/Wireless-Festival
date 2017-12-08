@@ -32,17 +32,20 @@ Partial Class frmMainMenu
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblDateTime = New System.Windows.Forms.Label()
         Me.btnActs = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSignOut
         '
+        Me.btnSignOut.BackgroundImage = CType(resources.GetObject("btnSignOut.BackgroundImage"), System.Drawing.Image)
+        Me.btnSignOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnSignOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignOut.Location = New System.Drawing.Point(12, 319)
+        Me.btnSignOut.Location = New System.Drawing.Point(12, 289)
         Me.btnSignOut.Name = "btnSignOut"
-        Me.btnSignOut.Size = New System.Drawing.Size(120, 30)
+        Me.btnSignOut.Size = New System.Drawing.Size(60, 60)
         Me.btnSignOut.TabIndex = 10
-        Me.btnSignOut.Text = "Sign Out"
+        Me.ToolTip1.SetToolTip(Me.btnSignOut, "Sign out of your account")
         Me.btnSignOut.UseVisualStyleBackColor = True
         '
         'btnUsefulLinks
@@ -53,6 +56,7 @@ Partial Class frmMainMenu
         Me.btnUsefulLinks.Size = New System.Drawing.Size(120, 30)
         Me.btnUsefulLinks.TabIndex = 11
         Me.btnUsefulLinks.Text = "Useful Links"
+        Me.ToolTip1.SetToolTip(Me.btnUsefulLinks, "Useful links for Wireless Festival")
         Me.btnUsefulLinks.UseVisualStyleBackColor = True
         '
         'btnWeather
@@ -63,6 +67,7 @@ Partial Class frmMainMenu
         Me.btnWeather.Size = New System.Drawing.Size(120, 30)
         Me.btnWeather.TabIndex = 14
         Me.btnWeather.Text = "London Weather"
+        Me.ToolTip1.SetToolTip(Me.btnWeather, "Check out the Weather in London")
         Me.btnWeather.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -84,6 +89,7 @@ Partial Class frmMainMenu
         Me.btnItems.Size = New System.Drawing.Size(120, 30)
         Me.btnItems.TabIndex = 12
         Me.btnItems.Text = "Items Taking"
+        Me.ToolTip1.SetToolTip(Me.btnItems, "Track what items you are taking with you")
         Me.btnItems.UseVisualStyleBackColor = True
         '
         'Timer1
@@ -99,6 +105,7 @@ Partial Class frmMainMenu
         Me.lblDateTime.Size = New System.Drawing.Size(155, 20)
         Me.lblDateTime.TabIndex = 16
         Me.lblDateTime.Text = "00/00/0000 00:00:00"
+        Me.ToolTip1.SetToolTip(Me.lblDateTime, "Current Date and Time")
         '
         'btnActs
         '
@@ -108,6 +115,7 @@ Partial Class frmMainMenu
         Me.btnActs.Size = New System.Drawing.Size(120, 30)
         Me.btnActs.TabIndex = 17
         Me.btnActs.Text = "Acts"
+        Me.ToolTip1.SetToolTip(Me.btnActs, "Create your act schedule")
         Me.btnActs.UseVisualStyleBackColor = True
         '
         'frmMainMenu
@@ -138,4 +146,5 @@ Partial Class frmMainMenu
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents lblDateTime As System.Windows.Forms.Label
     Friend WithEvents btnActs As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

@@ -53,3 +53,18 @@ C:\Users\Elliot\Desktop\Wireless Festival\Wireless Festival v1.2\WirelessFestiva
 C:\Users\Elliot\Desktop\Wireless Festival\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmWelcome.resources
 C:\Users\Elliot\Desktop\Wireless Festival\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmPrintItems.resources
 C:\Users\Elliot\Desktop\Wireless Festival\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmActs.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.exe
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.xml
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.pdb
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\bin\Debug\WirelessFestival.exe
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\bin\Debug\WirelessFestival.pdb
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\bin\Debug\WirelessFestival.xml
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmActs.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmCreateAccount.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmUsefulLinks.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmItems.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmMainMenu.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmSignIn.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.Resources.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.frmPrintItems.resources
+\\bassstr\pupilhome$\00morgane\Documents\Wireless Festival v1.2\WirelessFestival\obj\x86\Debug\WirelessFestival.vbproj.GenerateResource.Cache

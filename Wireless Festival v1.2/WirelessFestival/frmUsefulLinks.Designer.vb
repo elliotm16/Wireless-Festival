@@ -22,11 +22,14 @@ Partial Class frmUsefulLinks
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUsefulLinks))
         Me.btnWebsite = New System.Windows.Forms.Button()
         Me.btnWikipedia = New System.Windows.Forms.Button()
         Me.btnFacebook = New System.Windows.Forms.Button()
         Me.btnTwitter = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'btnWebsite
@@ -71,15 +74,17 @@ Partial Class frmUsefulLinks
         '
         'btnReturn
         '
+        Me.btnReturn.BackgroundImage = CType(resources.GetObject("btnReturn.BackgroundImage"), System.Drawing.Image)
+        Me.btnReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnReturn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReturn.Location = New System.Drawing.Point(12, 12)
         Me.btnReturn.Name = "btnReturn"
-        Me.btnReturn.Size = New System.Drawing.Size(120, 30)
+        Me.btnReturn.Size = New System.Drawing.Size(60, 60)
         Me.btnReturn.TabIndex = 16
-        Me.btnReturn.Text = "Return"
+        Me.ToolTip1.SetToolTip(Me.btnReturn, "Return to the Main Menu")
         Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'frmFurtherInfo
+        'frmUsefulLinks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -90,8 +95,8 @@ Partial Class frmUsefulLinks
         Me.Controls.Add(Me.btnFacebook)
         Me.Controls.Add(Me.btnWikipedia)
         Me.Controls.Add(Me.btnWebsite)
-        Me.Name = "frmFurtherInfo"
-        Me.Text = "frmFurtherInfo"
+        Me.Name = "frmUsefulLinks"
+        Me.Text = "Useful Links"
         Me.ResumeLayout(False)
 
     End Sub
@@ -100,4 +105,5 @@ Partial Class frmUsefulLinks
     Friend WithEvents btnFacebook As System.Windows.Forms.Button
     Friend WithEvents btnTwitter As System.Windows.Forms.Button
     Friend WithEvents btnReturn As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

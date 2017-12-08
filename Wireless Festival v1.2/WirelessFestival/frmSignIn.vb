@@ -2,7 +2,9 @@
 
 Public Class frmSignIn
 
-    Private Sub btnSignIn_Click(sender As System.Object, e As System.EventArgs) Handles btnSignIn.Click
+    Dim ShowPassword As Boolean
+
+    Private Sub btnSignIn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSignIn.Click
 
         Dim Details() As String = File.ReadAllLines(Dir$("Details.txt"))
 
@@ -34,22 +36,42 @@ Public Class frmSignIn
 
     End Sub
 
-    Private Sub btnCreateAccount_Click(sender As System.Object, e As System.EventArgs) Handles btnCreateAccount.Click
+    Private Sub btnCreateAccount_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCreateAccount.Click
 
         frmCreateAccount.Show()
         Me.Hide()
 
     End Sub
 
-    Private Sub chkShowPassword_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkShowPassword.CheckedChanged
+    Private Sub btnShowPassword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowPassword.Click
 
-        If chkShowPassword.Checked = False Then
+        If ShowPassword = False Then
 
-            txtPassword.PasswordChar = "*"
+            txtPassword.PasswordChar = ""
+
+            ShowPassword = True
 
         Else
 
-            txtPassword.PasswordChar = ""
+            txtPassword.PasswordChar = "*"
+
+            ShowPassword = False
+
+        End If
+
+    End Sub
+
+    Private Sub frmSignIn_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        ShowPassword = False
+
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+
+        If MessageBox.Show("Would you like to Exit?", "Wireless Festival Planner", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+
+            Application.Exit()
 
         End If
 

@@ -40,11 +40,12 @@ Public Class frmItems
         Else
 
             sw.WriteLine(updAddQuantity.Value & "x " & txtItem.Text)
-            sw.Close()
 
             UpdateItems()
 
         End If
+
+        sw.Close()
 
         txtItem.Text = ""
         updAddQuantity.Value = 1
