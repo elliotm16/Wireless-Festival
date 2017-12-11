@@ -92,7 +92,7 @@ Partial Class frmItems
         Me.btnReturn.Location = New System.Drawing.Point(12, 12)
         Me.btnReturn.Name = "btnReturn"
         Me.btnReturn.Size = New System.Drawing.Size(60, 60)
-        Me.btnReturn.TabIndex = 4
+        Me.btnReturn.TabIndex = 8
         Me.ToolTip1.SetToolTip(Me.btnReturn, "Return to the Main Menu")
         Me.btnReturn.UseVisualStyleBackColor = True
         '
@@ -102,7 +102,7 @@ Partial Class frmItems
         Me.btnRemoveItem.Location = New System.Drawing.Point(309, 324)
         Me.btnRemoveItem.Name = "btnRemoveItem"
         Me.btnRemoveItem.Size = New System.Drawing.Size(75, 30)
-        Me.btnRemoveItem.TabIndex = 18
+        Me.btnRemoveItem.TabIndex = 6
         Me.btnRemoveItem.Text = "Remove"
         Me.ToolTip1.SetToolTip(Me.btnRemoveItem, "Remove an item")
         Me.btnRemoveItem.UseVisualStyleBackColor = True
@@ -113,7 +113,7 @@ Partial Class frmItems
         Me.btnEditQuantity.Location = New System.Drawing.Point(309, 237)
         Me.btnEditQuantity.Name = "btnEditQuantity"
         Me.btnEditQuantity.Size = New System.Drawing.Size(75, 30)
-        Me.btnEditQuantity.TabIndex = 19
+        Me.btnEditQuantity.TabIndex = 5
         Me.btnEditQuantity.Text = "Edit"
         Me.ToolTip1.SetToolTip(Me.btnEditQuantity, "Edit the item quantity of an item you have added")
         Me.btnEditQuantity.UseVisualStyleBackColor = True
@@ -136,7 +136,7 @@ Partial Class frmItems
         Me.updEditQuantity.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.updEditQuantity.Name = "updEditQuantity"
         Me.updEditQuantity.Size = New System.Drawing.Size(50, 22)
-        Me.updEditQuantity.TabIndex = 21
+        Me.updEditQuantity.TabIndex = 4
         Me.updEditQuantity.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'lstItems
@@ -163,7 +163,7 @@ Partial Class frmItems
         Me.btnPrint.Location = New System.Drawing.Point(140, 355)
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(75, 30)
-        Me.btnPrint.TabIndex = 28
+        Me.btnPrint.TabIndex = 7
         Me.btnPrint.Text = "Print"
         Me.ToolTip1.SetToolTip(Me.btnPrint, "Print off your item list")
         Me.btnPrint.UseVisualStyleBackColor = True

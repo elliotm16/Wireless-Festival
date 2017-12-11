@@ -38,7 +38,7 @@ Partial Class frmUsefulLinks
         Me.btnWebsite.Location = New System.Drawing.Point(50, 140)
         Me.btnWebsite.Name = "btnWebsite"
         Me.btnWebsite.Size = New System.Drawing.Size(120, 30)
-        Me.btnWebsite.TabIndex = 12
+        Me.btnWebsite.TabIndex = 1
         Me.btnWebsite.Text = "Official Website"
         Me.btnWebsite.UseVisualStyleBackColor = True
         '
@@ -48,7 +48,7 @@ Partial Class frmUsefulLinks
         Me.btnWikipedia.Location = New System.Drawing.Point(210, 140)
         Me.btnWikipedia.Name = "btnWikipedia"
         Me.btnWikipedia.Size = New System.Drawing.Size(120, 30)
-        Me.btnWikipedia.TabIndex = 13
+        Me.btnWikipedia.TabIndex = 2
         Me.btnWikipedia.Text = "Wikipedia Page"
         Me.btnWikipedia.UseVisualStyleBackColor = True
         '
@@ -58,7 +58,7 @@ Partial Class frmUsefulLinks
         Me.btnFacebook.Location = New System.Drawing.Point(50, 190)
         Me.btnFacebook.Name = "btnFacebook"
         Me.btnFacebook.Size = New System.Drawing.Size(120, 30)
-        Me.btnFacebook.TabIndex = 14
+        Me.btnFacebook.TabIndex = 3
         Me.btnFacebook.Text = "Facebook"
         Me.btnFacebook.UseVisualStyleBackColor = True
         '
@@ -68,7 +68,7 @@ Partial Class frmUsefulLinks
         Me.btnTwitter.Location = New System.Drawing.Point(210, 190)
         Me.btnTwitter.Name = "btnTwitter"
         Me.btnTwitter.Size = New System.Drawing.Size(120, 30)
-        Me.btnTwitter.TabIndex = 15
+        Me.btnTwitter.TabIndex = 4
         Me.btnTwitter.Text = "Twitter"
         Me.btnTwitter.UseVisualStyleBackColor = True
         '
@@ -80,7 +80,7 @@ Partial Class frmUsefulLinks
         Me.btnReturn.Location = New System.Drawing.Point(12, 12)
         Me.btnReturn.Name = "btnReturn"
         Me.btnReturn.Size = New System.Drawing.Size(60, 60)
-        Me.btnReturn.TabIndex = 16
+        Me.btnReturn.TabIndex = 5
         Me.ToolTip1.SetToolTip(Me.btnReturn, "Return to the Main Menu")
         Me.btnReturn.UseVisualStyleBackColor = True
         '

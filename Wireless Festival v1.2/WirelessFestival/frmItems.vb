@@ -29,6 +29,20 @@ Public Class frmItems
 
         Dim sw As New StreamWriter(FileLocation, True)
 
+        If lstItems.Items.Contains(txtItem.Text) Then
+
+            MsgBox("hi")
+
+            Dim PreviousQuantity As Integer
+
+            PreviousQuantity = lstItems.Items.Item(txtItem.Text).Substring(0, 1)
+
+            lstItems.Items.Add(lstItems.SelectedItem.Replace(PreviousQuantity, PreviousQuantity + 1))
+
+            lstItems.Items.Remove(lstItems.SelectedItem)
+
+        End If
+
         If txtItem.Text = "" Then
 
             MsgBox("The Item textbox must not be left blank.")
@@ -40,6 +54,8 @@ Public Class frmItems
         Else
 
             sw.WriteLine(updAddQuantity.Value & "x " & txtItem.Text)
+
+            sw.Close()
 
             UpdateItems()
 

@@ -31,16 +31,24 @@
 
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-
-        lblDateTime.Text = Now
-
-    End Sub
-
-    Private Sub btnActs_Click(sender As System.Object, e As System.EventArgs) Handles btnActs.Click
+    Private Sub btnActs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActs.Click
 
         frmActs.Show()
         Me.Hide()
+
+    End Sub
+
+    Private Sub frmMainMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        Dim msg As String
+
+        Dim secondDate As Date
+
+        secondDate = #7/6/2018#
+
+        msg = "Days until Wireless 2018: " & DateDiff(DateInterval.Day, Now, secondDate)
+
+        lblDateTime.Text = msg.ToString
 
     End Sub
 

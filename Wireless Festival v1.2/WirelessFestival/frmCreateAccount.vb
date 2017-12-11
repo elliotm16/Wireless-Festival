@@ -1,8 +1,11 @@
 ﻿Imports System.IO
+Imports System.Text.RegularExpressions
 
 Public Class frmCreateAccount
 
-    Private Sub btnSignIn_Click(sender As System.Object, e As System.EventArgs) Handles btnCreateAccount.Click
+    Dim ShowPassword As Boolean
+
+    Private Sub btnCreateAccount_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCreateAccount.Click
 
         Dim CustomersData() As String = File.ReadAllLines(Dir$("Details.txt"))
 
@@ -30,7 +33,7 @@ Public Class frmCreateAccount
 
     End Sub
 
-    Public Function Validation(CustomersData)
+    Public Function Validation(ByVal CustomersData)
 
         Dim PasswordReq As Boolean
         PasswordReq = True
@@ -39,11 +42,15 @@ Public Class frmCreateAccount
         txtLettersNumbers.ForeColor = Color.Black
         txtBothCases.ForeColor = Color.Black
 
-        ' Email address doesn't contain '@' and '.'
+        ' Invalid email address
 
-        If (txtEmailAddress.Text).Contains("@") = False Or (txtEmailAddress.Text).Contains(".") = False Then
+        Dim Pattern As String = "^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"
 
-            MsgBox("Your Email Address must contain the '@' and '.' symbols.")
+        Dim ValidEmail As Match = Regex.Match(txtEmailAddress.Text, Pattern)
+
+        If ValidEmail.Success = False Then
+
+            MsgBox("You must enter a valid Email Address.")
 
             Return False
 
@@ -79,8 +86,6 @@ Public Class frmCreateAccount
 
             txtNumCharacters.ForeColor = Color.DarkRed
 
-            PasswordRequirements()
-
             Return False
 
         End If
@@ -104,8 +109,6 @@ Public Class frmCreateAccount
 
             txtLettersNumbers.ForeColor = Color.DarkRed
 
-            PasswordRequirements()
-
             Return False
 
         End If
@@ -115,8 +118,6 @@ Public Class frmCreateAccount
         If (txtPassword1.Text = (txtPassword1.Text).ToUpper) Or (txtPassword1.Text = (txtPassword1.Text).ToLower) Then
 
             txtBothCases.ForeColor = Color.DarkRed
-
-            PasswordRequirements()
 
             Return False
 
@@ -136,10 +137,36 @@ Public Class frmCreateAccount
 
     End Function
 
-    Public Sub PasswordRequirements()
+    Private Sub btnShowPassword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowPassword.Click
 
-        txtPassword1.ForeColor = Color.DarkRed
-        txtPassword2.ForeColor = Color.DarkRed
+        If ShowPassword = False Then
+
+            txtPassword1.PasswordChar = ""
+            txtPassword2.PasswordChar = ""
+
+            ShowPassword = True
+
+        Else
+
+            txtPassword1.PasswordChar = "*"
+            txtPassword2.PasswordChar = "*"
+
+            ShowPassword = False
+
+        End If
+
+    End Sub
+
+    Private Sub frmCreateAccount_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        ShowPassword = False
+
+    End Sub
+
+    Private Sub btnSignIn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSignIn.Click
+
+        Me.Hide()
+        frmSignIn.Show()
 
     End Sub
 

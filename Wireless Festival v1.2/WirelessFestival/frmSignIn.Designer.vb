@@ -65,7 +65,7 @@ Partial Class frmSignIn
         Me.txtEmailAddress.Location = New System.Drawing.Point(177, 128)
         Me.txtEmailAddress.Name = "txtEmailAddress"
         Me.txtEmailAddress.Size = New System.Drawing.Size(150, 22)
-        Me.txtEmailAddress.TabIndex = 2
+        Me.txtEmailAddress.TabIndex = 1
         '
         'txtPassword
         '
@@ -74,7 +74,7 @@ Partial Class frmSignIn
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(150, 22)
-        Me.txtPassword.TabIndex = 3
+        Me.txtPassword.TabIndex = 2
         '
         'btnSignIn
         '
@@ -93,7 +93,7 @@ Partial Class frmSignIn
         Me.btnCreateAccount.Location = New System.Drawing.Point(12, 369)
         Me.btnCreateAccount.Name = "btnCreateAccount"
         Me.btnCreateAccount.Size = New System.Drawing.Size(120, 30)
-        Me.btnCreateAccount.TabIndex = 13
+        Me.btnCreateAccount.TabIndex = 5
         Me.btnCreateAccount.Text = "Create Account"
         Me.ToolTip1.SetToolTip(Me.btnCreateAccount, "Create an account if you don't already have one")
         Me.btnCreateAccount.UseVisualStyleBackColor = True
@@ -120,7 +120,7 @@ Partial Class frmSignIn
         Me.btnShowPassword.Location = New System.Drawing.Point(333, 177)
         Me.btnShowPassword.Name = "btnShowPassword"
         Me.btnShowPassword.Size = New System.Drawing.Size(40, 40)
-        Me.btnShowPassword.TabIndex = 17
+        Me.btnShowPassword.TabIndex = 3
         Me.ToolTip1.SetToolTip(Me.btnShowPassword, "Sign in to your account")
         Me.btnShowPassword.UseVisualStyleBackColor = True
         '
@@ -132,7 +132,7 @@ Partial Class frmSignIn
         Me.btnExit.Location = New System.Drawing.Point(12, 12)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(60, 60)
-        Me.btnExit.TabIndex = 18
+        Me.btnExit.TabIndex = 6
         Me.ToolTip1.SetToolTip(Me.btnExit, "Exit the Application")
         Me.btnExit.UseVisualStyleBackColor = True
         '

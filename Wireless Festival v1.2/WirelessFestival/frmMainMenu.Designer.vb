@@ -44,7 +44,7 @@ Partial Class frmMainMenu
         Me.btnSignOut.Location = New System.Drawing.Point(12, 289)
         Me.btnSignOut.Name = "btnSignOut"
         Me.btnSignOut.Size = New System.Drawing.Size(60, 60)
-        Me.btnSignOut.TabIndex = 10
+        Me.btnSignOut.TabIndex = 5
         Me.ToolTip1.SetToolTip(Me.btnSignOut, "Sign out of your account")
         Me.btnSignOut.UseVisualStyleBackColor = True
         '
@@ -54,7 +54,7 @@ Partial Class frmMainMenu
         Me.btnUsefulLinks.Location = New System.Drawing.Point(220, 110)
         Me.btnUsefulLinks.Name = "btnUsefulLinks"
         Me.btnUsefulLinks.Size = New System.Drawing.Size(120, 30)
-        Me.btnUsefulLinks.TabIndex = 11
+        Me.btnUsefulLinks.TabIndex = 2
         Me.btnUsefulLinks.Text = "Useful Links"
         Me.ToolTip1.SetToolTip(Me.btnUsefulLinks, "Useful links for Wireless Festival")
         Me.btnUsefulLinks.UseVisualStyleBackColor = True
@@ -65,7 +65,7 @@ Partial Class frmMainMenu
         Me.btnWeather.Location = New System.Drawing.Point(220, 160)
         Me.btnWeather.Name = "btnWeather"
         Me.btnWeather.Size = New System.Drawing.Size(120, 30)
-        Me.btnWeather.TabIndex = 14
+        Me.btnWeather.TabIndex = 3
         Me.btnWeather.Text = "London Weather"
         Me.ToolTip1.SetToolTip(Me.btnWeather, "Check out the Weather in London")
         Me.btnWeather.UseVisualStyleBackColor = True
@@ -87,7 +87,7 @@ Partial Class frmMainMenu
         Me.btnItems.Location = New System.Drawing.Point(220, 60)
         Me.btnItems.Name = "btnItems"
         Me.btnItems.Size = New System.Drawing.Size(120, 30)
-        Me.btnItems.TabIndex = 12
+        Me.btnItems.TabIndex = 1
         Me.btnItems.Text = "Items Taking"
         Me.ToolTip1.SetToolTip(Me.btnItems, "Track what items you are taking with you")
         Me.btnItems.UseVisualStyleBackColor = True
@@ -100,11 +100,10 @@ Partial Class frmMainMenu
         '
         Me.lblDateTime.AutoSize = True
         Me.lblDateTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDateTime.Location = New System.Drawing.Point(217, 9)
+        Me.lblDateTime.Location = New System.Drawing.Point(26, 9)
         Me.lblDateTime.Name = "lblDateTime"
-        Me.lblDateTime.Size = New System.Drawing.Size(155, 20)
+        Me.lblDateTime.Size = New System.Drawing.Size(0, 20)
         Me.lblDateTime.TabIndex = 16
-        Me.lblDateTime.Text = "00/00/0000 00:00:00"
         Me.ToolTip1.SetToolTip(Me.lblDateTime, "Current Date and Time")
         '
         'btnActs
@@ -113,7 +112,7 @@ Partial Class frmMainMenu
         Me.btnActs.Location = New System.Drawing.Point(220, 210)
         Me.btnActs.Name = "btnActs"
         Me.btnActs.Size = New System.Drawing.Size(120, 30)
-        Me.btnActs.TabIndex = 17
+        Me.btnActs.TabIndex = 4
         Me.btnActs.Text = "Acts"
         Me.ToolTip1.SetToolTip(Me.btnActs, "Create your act schedule")
         Me.btnActs.UseVisualStyleBackColor = True
@@ -132,7 +131,6 @@ Partial Class frmMainMenu
         Me.Controls.Add(Me.btnUsefulLinks)
         Me.Controls.Add(Me.btnSignOut)
         Me.Name = "frmMainMenu"
-        Me.Text = "Logged In"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

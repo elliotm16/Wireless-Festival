@@ -39,7 +39,7 @@ Partial Class frmActs
         Me.cboActs.Location = New System.Drawing.Point(53, 190)
         Me.cboActs.Name = "cboActs"
         Me.cboActs.Size = New System.Drawing.Size(150, 21)
-        Me.cboActs.TabIndex = 0
+        Me.cboActs.TabIndex = 2
         '
         'Label4
         '
@@ -58,7 +58,7 @@ Partial Class frmActs
         Me.cboDays.Location = New System.Drawing.Point(53, 119)
         Me.cboDays.Name = "cboDays"
         Me.cboDays.Size = New System.Drawing.Size(150, 21)
-        Me.cboDays.TabIndex = 20
+        Me.cboDays.TabIndex = 1
         '
         'Label1
         '
@@ -78,7 +78,7 @@ Partial Class frmActs
         Me.btnReturn.Location = New System.Drawing.Point(12, 12)
         Me.btnReturn.Name = "btnReturn"
         Me.btnReturn.Size = New System.Drawing.Size(60, 60)
-        Me.btnReturn.TabIndex = 22
+        Me.btnReturn.TabIndex = 4
         Me.ToolTip1.SetToolTip(Me.btnReturn, "Return to the Main Menu")
         Me.btnReturn.UseVisualStyleBackColor = True
         '
@@ -88,7 +88,7 @@ Partial Class frmActs
         Me.btnAdd.Location = New System.Drawing.Point(83, 228)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(120, 30)
-        Me.btnAdd.TabIndex = 23
+        Me.btnAdd.TabIndex = 3
         Me.btnAdd.Text = "Add"
         Me.ToolTip1.SetToolTip(Me.btnAdd, "Add an act to your schedule")
         Me.btnAdd.UseVisualStyleBackColor = True
